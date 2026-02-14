@@ -1,4 +1,5 @@
-## Hi there 👋
+## Welcome to my GitHub!
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/dc7eea0b-06ce-4c8e-b496-1f6d3b010c90" />
 
 <!--
 **sanpitka/sanpitka** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
