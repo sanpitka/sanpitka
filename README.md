@@ -1,5 +1,14 @@
 ## Welcome to my GitHub!
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/dc7eea0b-06ce-4c8e-b496-1f6d3b010c90" />
+I'm a
+✨Community educator (Central Ostrobothnia university of applied sciences, 2008-2011)
+✨Musician (Oulu conservatory, 2012-2015)
+and the latest but not least
+✨MSc in information processing sciences (University of Oulu, 2022-2025)
+
+# My projects
+Bachelor's project 2024
+In my bachelor's project, my team created a graphical user interface to configure and control LED pipes in Vectorama gaming event.
 
 <!--
 **sanpitka/sanpitka** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
