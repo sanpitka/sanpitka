@@ -2,8 +2,8 @@
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/dc7eea0b-06ce-4c8e-b496-1f6d3b010c90" />
 <p>I'm a
 <br>  👩she/her
-<br>  ✨Community educator (Central Ostrobothnia university of applied sciences, 2008-2011)
-<br>  ✨Musician (Oulu conservatory, 2012-2015)
+<br>  ✨Community educator (Central Ostrobothnia University of Applied Sciences, 2008-2011)
+<br>  ✨Musician (Oulu Conservatory, 2012-2015)
 <br>and the latest but not least
 <br>  ✨MSc in information processing sciences (University of Oulu, 2022-2025)
 <br> (and a handcrafts freak, scouts leader, language nerd, for-fun orienteer, the Legend of Zelda fan, etc.)</p>
