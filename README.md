@@ -13,7 +13,7 @@ It's the year 2021. I have recently returned back to work from my maternity leav
 
 Covid lockdowns closed the early childhood music groups and family clubs I used to lead. My workdays were filled with filming videos to YouTube for our client families to watch (which was fun, but I still had the feeling that only our grandparents watched the videos) and sitting behind the window just in case someone comes to the other side and wants to talk (which was not fun, as nobody ever came). I was really yearning for something meaningful to do to prevent my brain from melting. 
 
-Then I found the Open Uni courses. I had one (that was really fun!), then I had another and yet another... Then I noticed I had completed enough courses to just walk into university via the <a href="https://joy.oulu.fi/en">Open university route</a>. I seized the opportunity and haven't regretted!
+Then I found the Open Uni courses. I had one (that was really fun!), then I had another and yet another... Then I noticed I had completed enough courses to just walk into university via the <a href="https://joy.oulu.fi/en">Open university route</a>. I seized the opportunity and haven't regretted! It took me only 3.5 years to complete both Bachelor's and Master's degree with very good grades, which may indicate I love learning and I am good at it 🥰
 
 ## My projects
 ### Bachelor's project 2024
