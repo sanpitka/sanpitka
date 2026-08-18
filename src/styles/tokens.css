@@ -1,0 +1,55 @@
+/* Design tokens — forest green + cream.
+   Swap the hex values here and the whole site follows.
+   Contrast ratios noted per token; keep the pairings if you change colours. */
+
+:root {
+  /* Light */
+  --accent: #15803d; /* links, accents      4.9:1 on --bg   AA  */
+  --accent-strong: #166534; /* filled button bg    5.5:1 vs #fff   AA  */
+  --accent-soft: rgba(21, 128, 61, 0.08);
+  --on-accent: #fff; /* text on --accent-strong */
+  --text-h: #14532d; /* headings           11.0:1 on --bg   AAA */
+  --text: #4b5563; /* body                7.5:1 on --bg   AAA */
+  --text-muted: #6b7280;
+  --bg: #fefdf8; /* cream */
+  --surface: #f7f5ec; /* cards */
+  --surface-2: #efece0;
+  --border: #e4e0d0;
+  --shadow:
+    0 1px 2px rgba(20, 83, 45, 0.06), 0 8px 24px -8px rgba(20, 83, 45, 0.12);
+  --header-bg: rgba(254, 253, 248, 0.85);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  /* Fluid type — scales with the viewport, no media queries needed */
+  --step-hero: clamp(2.25rem, 1.4rem + 4vw, 3.75rem);
+  --step-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --step-h3: 1.125rem;
+  --step-small: 0.875rem;
+
+  --container: 1080px;
+  --gutter: 1.5rem;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-pill: 999px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #4ade80; /*  9.0:1 on --bg   AAA */
+    --accent-strong: #4ade80; /*  light green — pair with dark text */
+    --accent-soft: rgba(74, 222, 128, 0.12);
+    --on-accent: #14181a; /*  flipped: dark text on light green */
+    --text-h: #f7fee7;
+    --text: #9ca3af; /*  6.5:1 on --bg   AA  */
+    --text-muted: #7c8794;
+    --bg: #14181a;
+    --surface: #1f2529;
+    --surface-2: #262d31;
+    --border: #2f3a34;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 24px -8px rgba(0, 0, 0, 0.6);
+    --header-bg: rgba(20, 24, 26, 0.85);
+  }
+}

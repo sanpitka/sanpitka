@@ -24,7 +24,7 @@ Then I found the Open Uni courses. I had one (that was really fun!), then I had 
 ### Master's project 2025
 <a href="https://github.com/sanpitka/SmartCanvas">**SmartCanvas**</a> for INTERACT research unit, University of Oulu
 <br> **My role:** UI design and implementation, user tests
-<br> Our team of seven members continued the multiyear SmartCanvas student project as the 10th project group. Our goal was to unwrap the spaghetti code accumulated during previous years and to pursue for more intuitive and language-free user interface. We also created 
+<br> Our team of seven members continued the multiyear SmartCanvas student project as the 10th project group. Our goal was to unwrap the spaghetti code accumulated during previous years and to pursue for more intuitive and language-free user interface. We also created some local filters representing the city of Oulu for the Capital of Culture year 2026.
 
 ### iXBRL tool 2026
 My brother and I are developing a multifunctional tool for preparing financial statements in iXBRL format. Sorry, the repository is private!
