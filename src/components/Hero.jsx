@@ -22,25 +22,17 @@ export default function Hero() {
               {hero.ctaContact}
             </a>
           </div>
-
-          <dl className="hero__facts">
-            {hero.facts.map((fact) => (
-              <div className="hero__fact" key={fact.label}>
-                <dt className="hero__fact-value">{fact.value}</dt>
-                <dd className="hero__fact-label">{fact.label}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
 
         <div className="hero__portrait">
-          {/* width/height are the intrinsic size of the placeholder — they reserve
-              the box so the layout doesn't shift while the image loads. */}
+          {/* width/height are the photo's intrinsic size (960×960) — they reserve
+              the box so the layout doesn't shift while the image loads. CSS crops
+              it to 4/5 from the centre. */}
           <img
             src={asset(hero.portrait.src)}
             alt={hero.portrait.alt}
-            width="800"
-            height="1000"
+            width="960"
+            height="960"
             fetchPriority="high"
           />
         </div>

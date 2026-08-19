@@ -2,7 +2,6 @@ import { useLanguage } from './i18n/useLanguage.js'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
-import Skills from './components/Skills.jsx'
 import ProjectCarousel from './components/ProjectCarousel.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
@@ -21,7 +20,6 @@ function App() {
       <main id="main">
         <Hero />
         <About />
-        <Skills />
         <ProjectCarousel />
         <Contact />
       </main>

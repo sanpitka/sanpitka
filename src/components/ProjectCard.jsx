@@ -23,7 +23,8 @@ export default function ProjectCard({ project, eager = false }) {
 
       <div className="project__body">
         <p className="eyebrow">
-          {project.year} · {project.context}
+          {project.year}
+          {project.context && ` · ${project.context}`}
         </p>
         <h3 className="project__title">{project.title}</h3>
         <p className="project__client">{project.client}</p>
@@ -34,14 +35,6 @@ export default function ProjectCard({ project, eager = false }) {
         </p>
 
         <p className="project__blurb">{project.blurb}</p>
-
-        {/* Optional — the private iXBRL repo has no stack data. */}
-        {project.tech?.length > 0 && (
-          <p className="project__tech">
-            <span className="project__role-label">{projects.techLabel}:</span>{' '}
-            {project.tech.join(' · ')}
-          </p>
-        )}
 
         <ul className="tags">
           {project.tags.map((tag) => (

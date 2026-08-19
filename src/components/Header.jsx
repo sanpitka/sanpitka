@@ -5,7 +5,6 @@ export default function Header() {
 
   const sections = [
     ['about', t.nav.about],
-    ['skills', t.nav.skills],
     ['projects', t.nav.projects],
     ['contact', t.nav.contact],
   ]

@@ -32,6 +32,11 @@ body {
   margin: 0;
 }
 
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
 #root {
   min-height: 100svh;
   display: flex;

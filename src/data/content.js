@@ -1,20 +1,5 @@
 /**
  * ALL user-visible text for the site lives here, in both languages.
- * Components read from this file and contain no copy of their own — so to change
- * wording, add a project, or reorder anything, you only edit this file.
- *
- * Image paths are relative to public/ (no leading slash) — asset() adds the base.
- *
- * Per-project `tech` lists come from the repos' actual language breakdowns.
- *
- * TODO (Sanna): three things need your eyes.
- *   1. Python is listed under skills because it is 63% of SmartCanvas — but your
- *      role there was UI implementation and user tests. If you did not actually
- *      work in the Python backend, drop it. Never overclaim on your own CV.
- *   2. The iXBRL project has no `tech` list because the repo is private and I
- *      have no data for it. Add one if you want it shown.
- *   3. The Finnish copy is a faithful translation, but the voice is yours —
- *      expect to rewrite it in your own words.
  */
 
 export const content = {
@@ -25,52 +10,55 @@ export const content = {
 
     nav: {
       brand: 'Sanna Pitkänen',
-      about: 'About',
-      skills: 'Skills',
+      about: 'My story',
       projects: 'Projects',
       contact: 'Contact',
-      menuOpen: 'Open menu',
-      menuClose: 'Close menu',
     },
 
     langToggle: {
       label: 'Switch language to Finnish',
-      short: 'FI',
       long: 'Suomeksi',
     },
 
     hero: {
-      eyebrow: 'Oulu, Finland · she/her',
+      eyebrow: 'Portfolio',
       name: 'Sanna Pitkänen',
-      tagline: 'Community educator and musician turned software developer.',
+      tagline: 'Junior software developer',
       intro:
-        'I build interfaces for people who are not developers. Two careers in teaching and music taught me how to read a room and explain hard things simply — I now bring that to UI design, frontend work and user research.',
-      ctaProjects: 'See my projects',
+        'What do a software developer and a craftsperson have in common?\n' +
+        'At the very least, the skill to listen to the client, pick the right tools, and make something that is actually needed.',
+      ctaProjects: 'My projects',
       ctaContact: 'Get in touch',
       portrait: {
-        src: 'portrait.svg',
-        alt: 'Portrait of Sanna Pitkänen',
-      },
-      facts: [
-        { value: 'MSc', label: 'Information Processing Sciences' },
-        { value: '3.5 yrs', label: 'for both BSc and MSc' },
-        { value: '3', label: 'careers, so far' },
-      ],
+        src: 'portrait.jpg',
+        alt: "Sanna Pitkänen smiling in front of a framed panel made from Vallila's Oulu fabric",
+      }
     },
 
     about: {
-      heading: 'Why coding?',
+      heading: 'My story',
       paragraphs: [
-        'It is 2021. I have just come back from maternity leave — and nobody is there. Covid lockdowns had closed the early childhood music groups and family clubs I used to lead. My days went into filming videos for client families (fun, though I suspected only the grandparents watched) and sitting behind a window in case someone showed up to talk. Nobody ever did.',
-        'So I took an Open University course to stop my brain from melting. It was genuinely fun, so I took another, and another — until I noticed I had completed enough to walk into university through the Open University route. I took it, and I have not regretted it once. Both degrees took me three and a half years, with very good grades: I love learning, and it turns out I am good at it.',
+        'What will I be when I grow up? According to my little brother, a "celloist" – I had just been given my first instrument. ' +
+        'I was thinking doctor, childminder or priest. In the end, an interest sparked by the school visits of my final upper-secondary year ' +
+        'led me to study civic activities and youth work at a university of applied sciences. Through my summer jobs ' +
+        'I also grew interested in music as a profession and applied to the Oulu Conservatory. I found work as a children’s instructor with a music focus, ' +
+        'a job that combined both the education and the music side of my training.',
+        '2021 was a time of change. I wandered onto the Open University’s pages looking for something meaningful to do ' +
+        'as a counterweight to the inactivity the coronavirus pandemic had brought. That same inactivity and boredom also led me to ' +
+        'join the Oulu chapter of Mensa Finland and to believe I might have what it takes to be a knowledge worker. ' +
+        'Around the same time I joined the scouts and realised that educational work ' +
+        'can also be done as a hobby in one’s free time, which frees up working hours for other interesting things. ' +
+        'With those thoughts, I dared to enrol as a degree student. After graduating I have worked at the university ' +
+        'on a project with the INTERACT research unit.',
+        'What will I be when I grow up? Maybe a software developer, maybe a researcher! The options are open, ' +
+        'the most important criterion being that the learning never stops.',
       ],
       educationHeading: 'Education',
       education: [
         {
           years: '2022–2025',
-          title: 'MSc, Information Processing Sciences',
+          title: 'BSc + MSc, Information Processing Science',
           org: 'University of Oulu',
-          note: 'BSc and MSc in 3.5 years, entered via the Open University route',
         },
         {
           years: '2012–2015',
@@ -83,60 +71,13 @@ export const content = {
           org: 'Centria University of Applied Sciences',
         },
       ],
-      asideHeading: 'Away from the keyboard',
-      interests: [
-        'Handcrafts',
-        'Scouts leader',
-        'Languages',
-        'Orienteering',
-        'The Legend of Zelda',
-      ],
-    },
-
-    skills: {
-      heading: 'What I do',
-      intro:
-        'Three project teams, two earlier careers, and a habit of asking who actually has to use this.',
-      groups: [
-        {
-          title: 'Frontend & code',
-          items: [
-            'JavaScript',
-            'TypeScript',
-            'Vue',
-            'Python',
-            'HTML & CSS',
-            'Git & GitHub',
-          ],
-        },
-        {
-          title: 'Design',
-          items: [
-            'UI design',
-            'Graphic design',
-            'Accessibility',
-            'Prototyping',
-          ],
-        },
-        {
-          title: 'Research & people',
-          items: [
-            'User testing',
-            'Project management',
-            'Teaching & facilitation',
-            'Teamwork',
-          ],
-        },
-      ],
     },
 
     projects: {
       heading: 'Projects',
-      intro: 'Three teams, three very different sets of users.',
-      hint: 'Swipe, or use the arrows and dots below',
+      intro: 'The technical side of these projects can be seen on my GitHub.',
       privateLabel: 'Private repository',
       roleLabel: 'My role',
-      techLabel: 'Built with',
       prev: 'Previous project',
       next: 'Next project',
       dotLabel: (n, title) => `Go to project ${n}: ${title}`,
@@ -149,14 +90,22 @@ export const content = {
           year: '2024',
           context: "Bachelor's project",
           client: 'Vector-Suomen verkkopeliyhdistys ry',
-          role: 'Project manager, graphic design, frontend implementation',
+          role: 'Project manager, graphic design, frontend implementation, writing the user manual',
           blurb:
-            'A team of five built a graphical interface for configuring and controlling LED pipes at the Vectorama gaming event. I led the project and designed and implemented the frontend — the operators needed to reprogram lighting live, mid-event, without touching code.',
-          tags: ['Frontend', 'UI design', 'Project management', 'Team of 5'],
-          tech: ['JavaScript', 'Vue', 'HTML & CSS'],
+            'A friend of mine, active in the Vector gaming association, had advance word about one of the assignments on the bachelor’s project course: ' +
+            'students would build a graphical interface for configuring and controlling LED light pipes driven by MQTT messages. ' +
+            'She talked me into signing up for the project, and it was worth it. I landed the role of project manager in our efficient team, making sure ' +
+            'the pack stayed together and the mood stayed fun. Once the project wrapped up, I got to volunteer at the Vectorama event and see our work in real use.',
+          tags: [
+            'JavaScript',
+            'Vue',
+            'HTML',
+            'CSS',
+            'Node-RED',
+          ],
           image: {
-            src: 'projects/ledrama.svg',
-            alt: 'Placeholder image for the Ledrama GUI project',
+            src: 'projects/ledrama2.jpg',
+            alt: 'A photo of the lighting at the Vectorama event. Photo: Mikko Törmänen.',
           },
           links: [
             {
@@ -174,12 +123,21 @@ export const content = {
           client: 'INTERACT research unit, University of Oulu',
           role: 'UI design and implementation, user tests',
           blurb:
-            'Our team of seven was the tenth group to work on the multi-year SmartCanvas project. We untangled the spaghetti code left by earlier years and pushed the interface toward something more intuitive and language-free. We also built local filters celebrating Oulu as European Capital of Culture 2026.',
-          tags: ['UI design', 'User testing', 'Refactoring', 'Team of 7'],
-          tech: ['Python', 'TypeScript', 'CSS', 'GLSL'],
+            'SmartCanvas, an art installation that carries the user into different landscapes, was a multi-year student project ' +
+            'in which our seven-person team was the tenth group to take part. ' +
+            'Having got to know what the earlier groups had built, I wanted to make the art wall more intuitive and to remove the written instructions. ' +
+            'My team liked the prototype I made in Figma, so my idea made it into use. ' +
+            'I also designed and implemented an animation imitating brush strokes, which told the user that the program had begun processing the image. ' +
+            'Because the SmartCanvas installation was going on display during Oulu’s year as European Capital of Culture in 2026, I spent one spring afternoon cycling around Oulu ' +
+            'and photographing places that would suit the art wall as new, local filters — Pikisaari, seen in the image, among them. ',
+          tags: [
+            'TypeScript',
+            'UX/UI',
+            'User testing',
+          ],
           image: {
-            src: 'projects/smartcanvas.svg',
-            alt: 'Placeholder image for the SmartCanvas project',
+            src: 'projects/smartcanvas3.png',
+            alt: 'SmartCanvas image with Pikisaari filter',
           },
           links: [
             {
@@ -193,15 +151,18 @@ export const content = {
           id: 'ixbrl',
           title: 'iXBRL reporting tool',
           year: '2026',
-          context: 'Ongoing, with my brother',
-          client: 'Independent project',
-          role: 'Design and development',
+          context: 'In progress',
+          client: 'My own project',
+          role: 'Design and development, communicating with the client',
           blurb:
-            'My brother and I are building a multifunctional tool for preparing financial statements in iXBRL format. A domain where the rules are strict, the documents are long, and the people filing them are accountants rather than engineers.',
-          tags: ['iXBRL', 'Financial reporting', 'In progress'],
+            'My brother asked me to build an application that would make preparing iXBRL-format financial statements easy for, say, ' +
+            'a housing company. My goal is to come away with both a reporting tool for my brother and 10 credits ' +
+            'from the University of Helsinki Open University’s Full Stack project course. I expect the project to strengthen my ' +
+            'web development skills and to teach me a thing or two about accounting as well.',
+          tags: ['React', 'TypeScript', 'CSS', 'JSON', 'iXBRL',],
           image: {
-            src: 'projects/ixbrl.svg',
-            alt: 'Placeholder image for the iXBRL reporting tool project',
+            src: 'projects/ixbrl.jpg',
+            alt: 'A photo of a financial statement, a pen and a pocket calculator on a desk. Pixabay/stevepb',
           },
           private: true,
           links: [],
@@ -210,8 +171,8 @@ export const content = {
     },
 
     contact: {
-      heading: "Let's talk",
-      body: 'Looking for someone who can design an interface, build it, and then sit down with the people who have to use it? Get in touch.',
+      heading: "Contact me",
+      body: 'It\'s fun to get to know people. Including you.',
       links: [
         {
           label: 'LinkedIn',
@@ -227,7 +188,6 @@ export const content = {
     },
 
     footer: {
-      credit: 'Built with React and far too much care for a one-page site.',
       copyright: '© 2026 Sanna Pitkänen',
     },
   },
@@ -239,52 +199,55 @@ export const content = {
 
     nav: {
       brand: 'Sanna Pitkänen',
-      about: 'Minusta',
-      skills: 'Osaaminen',
+      about: 'Minun tarinani',
       projects: 'Projektit',
       contact: 'Yhteystiedot',
-      menuOpen: 'Avaa valikko',
-      menuClose: 'Sulje valikko',
     },
 
     langToggle: {
       label: 'Vaihda kieli englanniksi',
-      short: 'EN',
       long: 'In English',
     },
 
     hero: {
-      eyebrow: 'Oulu · hän',
+      eyebrow: 'Portfolio',
       name: 'Sanna Pitkänen',
-      tagline: 'Yhteisöpedagogi ja muusikko, josta tuli ohjelmistokehittäjä.',
+      tagline: 'Junior-ohjelmistokehittäjä',
       intro:
-        'Teen käyttöliittymiä ihmisille, jotka eivät ole kehittäjiä. Kaksi aiempaa uraa opetuksen ja musiikin parissa opettivat minut lukemaan tilanteita ja selittämään vaikeat asiat yksinkertaisesti — sen tuon nyt käyttöliittymäsuunnitteluun, frontend-työhön ja käyttäjätutkimukseen.',
-      ctaProjects: 'Katso projektini',
+        'Mitä yhteistä on ohjelmistokehittäjällä ja käsityöläisellä?\n' +
+        'Ainakin taito kuunnella asiakasta, valita oikeat työvälineet ja luoda jotain tarpeellista.',
+      ctaProjects: 'Projektini',
       ctaContact: 'Ota yhteyttä',
       portrait: {
-        src: 'portrait.svg',
-        alt: 'Sanna Pitkäsen kuva',
-      },
-      facts: [
-        { value: 'FM', label: 'tietojenkäsittelytiede' },
-        { value: '3,5 v', label: 'sekä kandi että maisteri' },
-        { value: '3', label: 'uraa tähän mennessä' },
-      ],
+        src: 'portrait.jpg',
+        alt: 'Sanna Pitkänen hymyilee Vallilan Oulu-kankaasta tehdyn taulun edessä',
+      }
     },
 
     about: {
-      heading: 'Miksi koodaaminen?',
+      heading: 'Minun tarinani',
       paragraphs: [
-        'On vuosi 2021. Olen juuri palannut äitiysvapaalta — eikä paikalla ole ketään. Koronasulut olivat sulkeneet musiikkileikkikoulut ja perhekerhot, joita olin ohjannut. Päiväni kuluivat videoiden kuvaamiseen asiakasperheille (mikä oli hauskaa, vaikka epäilin että vain isovanhemmat niitä katsoivat) ja ikkunan takana istumiseen siltä varalta, että joku tulisi juttelemaan. Kukaan ei koskaan tullut.',
-        'Niinpä ilmoittautuin avoimen yliopiston kurssille, ettei aivoni sulaisi. Se oli aidosti hauskaa, joten otin toisen, ja vielä yhden — kunnes huomasin suorittaneeni tarpeeksi päästäkseni yliopistoon avoimen väylän kautta. Tartuin tilaisuuteen enkä ole katunut hetkeäkään. Molemmat tutkinnot kestivät minulta kolme ja puoli vuotta, ja arvosanat olivat kiitettäviä: rakastan oppimista, ja ilmeisesti olen siinä hyvä.',
+        'Mikä minusta tulee isona? Veljeni mukaan "sellosti" – olin juuri saanut ensimmäisen soittimeni. ' +
+        'Minä mietin lääkäriä, lastenhoitajaa tai pappia. Lopulta päädyin abivuoden oppilaitosvierailujen herättämän kiinnostuksen ' +
+        'myötä opiskelemaan kansalaistoimintaa ja nuorisotyötä ammattikorkeakouluun. Kesätyökokemusteni kautta ' +
+        'kiinnostuin myös musiikista ammattina ja hakeuduin Oulun konservatorioon. Sain töitä musiikkipainotteisena lastenohjaajana, ' +
+        'missä yhdistyivät sekä kasvatusalan että musiikin osaaminen.',
+        'Vuosi 2021 oli muutoksen aikaa. Eksyin avoimen yliopiston sivuille etsimään mielekästä tekemistä ' +
+        'vastapainoksi koronapandemian aiheuttamaan passiivisuuteen. Passiivisuus ja tylsistyminen saivat minut myös ' +
+        'liittymään Suomen Mensan Oulun paikallisosaston jäseneksi ja uskomaan, että minussa voisi olla rahkeita tietotyöläiseksi. ' + 
+        'Liityin samoihin aikoihin partioon ja oivalsin, että kasvatustyötä ' +
+        'on mahdollista tehdä myös harrastuspohjalta vapaa-ajalla, jolloin työajan voi käyttää muuhun kiinnostavaan. ' +
+        'Näiden ajatusten myötä uskaltauduin lähtemään tutkinto-opiskelijaksi. Valmistumiseni jälkeen olen työskennellyt ' +
+        'yliopistolla INTERACT-tutkimusryhmän projektissa.',
+        'Mikä minusta tulee isona? Ehkä ohjelmistokehittäjä, ehkä tutkija! Vaihtoehdot ovat avoinna, '+
+        'tärkeimpänä kriteerinä se, että oppiminen ei lopu koskaan.',
       ],
       educationHeading: 'Koulutus',
       education: [
         {
           years: '2022–2025',
-          title: 'FM, tietojenkäsittelytiede',
+          title: 'LuK + FM, tietojenkäsittelytiede',
           org: 'Oulun yliopisto',
-          note: 'Kandi ja maisteri 3,5 vuodessa, sisään avoimen väylän kautta',
         },
         {
           years: '2012–2015',
@@ -297,60 +260,13 @@ export const content = {
           org: 'Centria-ammattikorkeakoulu',
         },
       ],
-      asideHeading: 'Näppäimistön ulkopuolella',
-      interests: [
-        'Käsityöt',
-        'Partiojohtaja',
-        'Kielet',
-        'Suunnistus',
-        'The Legend of Zelda',
-      ],
-    },
-
-    skills: {
-      heading: 'Mitä teen',
-      intro:
-        'Kolme projektitiimiä, kaksi aiempaa uraa ja tapa kysyä, kenen tätä oikeasti pitää käyttää.',
-      groups: [
-        {
-          title: 'Frontend ja koodi',
-          items: [
-            'JavaScript',
-            'TypeScript',
-            'Vue',
-            'Python',
-            'HTML ja CSS',
-            'Git ja GitHub',
-          ],
-        },
-        {
-          title: 'Suunnittelu',
-          items: [
-            'Käyttöliittymäsuunnittelu',
-            'Graafinen suunnittelu',
-            'Saavutettavuus',
-            'Prototypointi',
-          ],
-        },
-        {
-          title: 'Tutkimus ja ihmiset',
-          items: [
-            'Käyttäjätestaus',
-            'Projektinhallinta',
-            'Opetus ja ohjaus',
-            'Tiimityö',
-          ],
-        },
-      ],
     },
 
     projects: {
       heading: 'Projektit',
-      intro: 'Kolme tiimiä, kolme hyvin erilaista käyttäjäkuntaa.',
-      hint: 'Pyyhkäise, tai käytä nuolia ja pisteitä alla',
+      intro: 'Projektien tekninen sisältö on nähtävissä GitHubissani.',
       privateLabel: 'Yksityinen repositorio',
       roleLabel: 'Roolini',
-      techLabel: 'Teknologiat',
       prev: 'Edellinen projekti',
       next: 'Seuraava projekti',
       dotLabel: (n, title) => `Siirry projektiin ${n}: ${title}`,
@@ -361,21 +277,24 @@ export const content = {
           id: 'ledrama',
           title: 'Ledrama GUI',
           year: '2024',
-          context: 'Kandidaatintyön projekti',
+          context: 'Kandiprojekti',
           client: 'Vector-Suomen verkkopeliyhdistys ry',
-          role: 'Projektipäällikkö, graafinen suunnittelu, frontendin toteutus',
+          role: 'Projektipäällikkö, graafinen suunnittelu, frontendin toteutus, käyttöohjeen laatiminen',
           blurb:
-            'Viiden hengen tiimimme rakensi graafisen käyttöliittymän LED-putkien konfigurointiin ja ohjaamiseen Vectorama-tapahtumassa. Vetin projektin sekä suunnittelin ja toteutin frontendin — operaattoreiden oli pystyttävä ohjelmoimaan valot uudelleen kesken tapahtuman ilman koodiin koskemista.',
+            'Vector-verkkopeliyhdistyksessä aktiivisesti mukana oleva ystäväni tiesi kertoa ennakkotietoa yhdestä kandiprojektikurssin toimeksiannosta: ' +
+            'opiskelijoiden tulisi tehdä graafinen käyttöliittymä MQTT-viesteillä ohjattavien LED-valoputkien konfigurointiin ja hallintaan. ' +
+            'Ilmoittauduin hänen houkuttelemanaan mukaan tähän projektiin, ja se kannatti. Pääsin tehokkaan tiimimme projektipäällikön rooliin huolehtimaan siitä, ' +
+            'että pakka pysyy kasassa ja meininki hauskana. Projektin päätyttyä pääsin vielä osallistumaan talkoolaisena Vectorama-tapahtumaan ja näkemään työmme tuloksen tosikäytössä.',
           tags: [
-            'Frontend',
-            'Käyttöliittymäsuunnittelu',
-            'Projektinhallinta',
-            '5 hengen tiimi',
+            'JavaScript',
+            'Vue',
+            'HTML',
+            'CSS',
+            'Node-RED',
           ],
-          tech: ['JavaScript', 'Vue', 'HTML ja CSS'],
           image: {
-            src: 'projects/ledrama.svg',
-            alt: 'Paikanpitäjäkuva Ledrama GUI -projektille',
+            src: 'projects/ledrama2.jpg',
+            alt: 'Kuva Vectorama-tapahtuman valaistuksesta. Kuvaaja: Mikko Törmänen.',
           },
           links: [
             {
@@ -389,21 +308,25 @@ export const content = {
           id: 'smartcanvas',
           title: 'SmartCanvas',
           year: '2025',
-          context: 'Maisterivaiheen projekti',
+          context: 'Maisteriprojekti',
           client: 'INTERACT-tutkimusyksikkö, Oulun yliopisto',
           role: 'Käyttöliittymän suunnittelu ja toteutus, käyttäjätestit',
           blurb:
-            'Seitsemän hengen tiimimme oli kymmenes ryhmä monivuotisessa SmartCanvas-projektissa. Selvitimme aiempien vuosien aikana kasautunutta spagettikoodia ja veimme käyttöliittymää intuitiivisempaan ja kielettömään suuntaan. Teimme myös paikallisia suodattimia Oulun kulttuuripääkaupunkivuodelle 2026.',
+            'Käyttäjän erilaisiin maisemiin vievä SmartCanvas-taideinstallaatio oli monivuotinen opiskelijaprojekti, ' +
+            'jossa meidän seitsemän hengen tiimimme oli kymmenes projektiin osallistunut ryhmä. ' +
+            'Tutustuttuani edellisten ryhmien aikaansaannoksiin halusin tehdä taideseinästä intuitiivisemman ja poistaa tekstimuotoiset ohjeet. ' +
+            'Figmalla tekemäni prototyyppi miellytti tiimiäni, joten ajatukseni pääsi käyttöön. ' +
+            'Suunnittelin ja toteutin myös siveltimenvetoja imitoiva animaation, joka kertoi käyttäjälle, että ohjelma oli alkanut käsitellä kuvaa. ' +
+            'Koska SmartCanvas-taideinstallaatio oli tulossa esille Oulun kulttuuripääkaupunkivuonna 2026, vietin yhden keväisen iltapäivän pyöräillen ympäri Oulua ' +
+            'ja valokuvaten taideseinän uusiksi, paikallisiksi filttereiksi sopivia paikkoja, esimerkkinä kuvassa näkyvä Pikisaari. ',
           tags: [
-            'Käyttöliittymäsuunnittelu',
+            'TypeScript',
+            'UX/UI',
             'Käyttäjätestaus',
-            'Refaktorointi',
-            '7 hengen tiimi',
           ],
-          tech: ['Python', 'TypeScript', 'CSS', 'GLSL'],
           image: {
-            src: 'projects/smartcanvas.svg',
-            alt: 'Paikanpitäjäkuva SmartCanvas-projektille',
+            src: 'projects/smartcanvas3.png',
+            alt: 'SmartCanvas-kuva Pikisaari-filtterillä',
           },
           links: [
             {
@@ -417,15 +340,18 @@ export const content = {
           id: 'ixbrl',
           title: 'iXBRL-raportointityökalu',
           year: '2026',
-          context: 'Käynnissä, veljeni kanssa',
+          context: 'Käynnissä',
           client: 'Oma projekti',
-          role: 'Suunnittelu ja kehitys',
+          role: 'Suunnittelu ja kehitys, asiakkaan kanssa kommunikointi',
           blurb:
-            'Veljeni ja minä kehitämme monipuolista työkalua tilinpäätösten laatimiseen iXBRL-muodossa. Toimiala, jossa säännöt ovat tiukat, dokumentit pitkiä ja tekijät kirjanpitäjiä eivät insinöörejä.',
-          tags: ['iXBRL', 'Tilinpäätösraportointi', 'Kehityksessä'],
+            'Veljeni pyysi minua kehittämään sovelluksen, jolla iXBRL-muotoisten tilinpäätösten tekeminen esimerkiksi ' +
+            'taloyhtiölle olisi helppoa. Tavoitteenani on saada sekä tilinpäätöstyökalu veljelleni että 10 opintopistettä ' +
+            'Helsingin yliopiston avoimen yliopiston Full Stack -projektikurssista. Uskon projektin vahvistavan ' +
+            'websovelluskehitystaitojani ja myös opettavan minulle yhtä ja toista kirjanpidosta.',
+          tags: [ 'React', 'TypeScript', 'CSS', 'JSON', 'iXBRL',],
           image: {
-            src: 'projects/ixbrl.svg',
-            alt: 'Paikanpitäjäkuva iXBRL-raportointityökalulle',
+            src: 'projects/ixbrl.jpg',
+            alt: 'Kuva, jossa on tilinpäätös, kynä ja taskulaskin pöydällä. Pixabay/stevepb',
           },
           private: true,
           links: [],
@@ -434,8 +360,8 @@ export const content = {
     },
 
     contact: {
-      heading: 'Jutellaan',
-      body: 'Etsitkö jotakuta, joka osaa suunnitella käyttöliittymän, toteuttaa sen ja sitten istua alas niiden ihmisten kanssa, joiden sitä pitää käyttää? Ota yhteyttä.',
+      heading: 'Ota yhteyttä',
+      body: 'Minusta on hauska tutustua uusiin ihmisiin. Myös sinuun.',
       links: [
         {
           label: 'LinkedIn',
@@ -451,8 +377,6 @@ export const content = {
     },
 
     footer: {
-      credit:
-        'Tehty Reactilla ja aivan liiallisella huolellisuudella yhden sivun sivustoa varten.',
       copyright: '© 2026 Sanna Pitkänen',
     },
   },

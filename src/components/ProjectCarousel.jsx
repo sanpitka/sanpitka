@@ -44,8 +44,10 @@ export default function ProjectCarousel() {
       const track = trackRef.current
       if (!track) return
 
-      const clamped = Math.max(0, Math.min(index, count - 1))
-      const slide = track.children[clamped]
+      // Wrap rather than clamp: -1 lands on the last slide, `count` on the first.
+      // The modulo is doubled because JS keeps the sign of a negative dividend.
+      const wrapped = ((index % count) + count) % count
+      const slide = track.children[wrapped]
       if (!slide) return
 
       // Scroll the track itself rather than calling slide.scrollIntoView(), which
@@ -80,9 +82,6 @@ export default function ProjectCarousel() {
     }
   }
 
-  const atStart = active === 0
-  const atEnd = active === count - 1
-
   return (
     <section className="section" id="projects" aria-labelledby="projects-heading">
       <div className="container">
@@ -98,72 +97,68 @@ export default function ProjectCarousel() {
           aria-roledescription="carousel"
           aria-labelledby="projects-heading"
         >
-          {/* tabIndex=0 is deliberate: a scrollable region must be reachable by
-              keyboard, and it anchors the arrow-key handler. */}
-          <div
-            className="carousel__track"
-            ref={trackRef}
-            tabIndex={0}
-            onKeyDown={onKeyDown}
-          >
-            {items.map((project, i) => (
-              <div
-                className="carousel__slide"
-                key={project.id}
-                data-index={i}
-                role="group"
-                aria-roledescription="slide"
-                aria-label={projects.slideLabel(i + 1, count, project.title)}
-              >
-                <ProjectCard project={project} eager={i === 0} />
-              </div>
-            ))}
-          </div>
+          {/* The viewport is the positioning context for the arrows, so they
+              centre on the cards rather than on the whole carousel block. */}
+          <div className="carousel__viewport">
+            {/* tabIndex=0 is deliberate: a scrollable region must be reachable by
+                keyboard, and it anchors the arrow-key handler. */}
+            <div
+              className="carousel__track"
+              ref={trackRef}
+              tabIndex={0}
+              onKeyDown={onKeyDown}
+            >
+              {items.map((project, i) => (
+                <div
+                  className="carousel__slide"
+                  key={project.id}
+                  data-index={i}
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label={projects.slideLabel(i + 1, count, project.title)}
+                >
+                  <ProjectCard project={project} eager={i === 0} />
+                </div>
+              ))}
+            </div>
 
-          <p className="visually-hidden" aria-live="polite">
-            {projects.status(active + 1, count, items[active].title)}
-          </p>
-
-          <div className="carousel__controls">
-            {/* aria-disabled rather than disabled: a real `disabled` button drops
-                out of the tab order mid-interaction, throwing focus to <body>
-                the moment you reach the last slide. */}
+            {/* Never disabled — the ends wrap around. */}
             <button
               type="button"
-              className="carousel__arrow"
-              onClick={() => !atStart && goTo(active - 1)}
-              aria-disabled={atStart}
+              className="carousel__arrow carousel__arrow--prev"
+              onClick={() => goTo(active - 1)}
               aria-label={projects.prev}
             >
               <span aria-hidden="true">&#8592;</span>
             </button>
 
-            <ul className="carousel__dots">
-              {items.map((project, i) => (
-                <li key={project.id}>
-                  <button
-                    type="button"
-                    className="carousel__dot"
-                    onClick={() => goTo(i)}
-                    aria-current={i === active}
-                    aria-label={projects.dotLabel(i + 1, project.title)}
-                  />
-                </li>
-              ))}
-            </ul>
-
             <button
               type="button"
-              className="carousel__arrow"
-              onClick={() => !atEnd && goTo(active + 1)}
-              aria-disabled={atEnd}
+              className="carousel__arrow carousel__arrow--next"
+              onClick={() => goTo(active + 1)}
               aria-label={projects.next}
             >
               <span aria-hidden="true">&#8594;</span>
             </button>
           </div>
 
-          <p className="carousel__hint">{projects.hint}</p>
+          <p className="visually-hidden" aria-live="polite">
+            {projects.status(active + 1, count, items[active].title)}
+          </p>
+
+          <ul className="carousel__dots">
+            {items.map((project, i) => (
+              <li key={project.id}>
+                <button
+                  type="button"
+                  className="carousel__dot"
+                  onClick={() => goTo(i)}
+                  aria-current={i === active}
+                  aria-label={projects.dotLabel(i + 1, project.title)}
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

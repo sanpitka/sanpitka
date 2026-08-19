@@ -12,15 +12,6 @@ export default function About() {
           {about.paragraphs.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
-
-          <h3 className="about__aside-heading">{about.asideHeading}</h3>
-          <ul className="tags">
-            {about.interests.map((interest) => (
-              <li className="tag" key={interest}>
-                {interest}
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className="about__education">

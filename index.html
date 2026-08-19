@@ -5,6 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
+    <!-- Browser UI picks up the page background from src/styles/tokens.css. -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#faf6f2"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#191413"
+    />
     <title>Sanna Pitkänen — Portfolio</title>
     <meta
       name="description"
@@ -18,6 +29,15 @@
       content="Community educator and musician turned software developer. Frontend, UI design and user research."
     />
     <meta property="og:url" content="https://sanpitka.github.io/sanpitka/" />
+    <!-- Absolute, because og:image is fetched by crawlers with no page context. -->
+    <meta
+      property="og:image"
+      content="https://sanpitka.github.io/sanpitka/portrait.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Sanna Pitkänen smiling, in front of a painted mural of red and white wooden houses"
+    />
     <meta name="twitter:card" content="summary" />
   </head>
   <body>
