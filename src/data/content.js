@@ -36,7 +36,7 @@ export const content = {
     },
 
     about: {
-      heading: 'My story',
+      heading: 'About me',
       paragraphs: [
         'What will I be when I grow up? According to my little brother, a "celloist" – I had just been given my first instrument. ' +
         'I was thinking doctor, childminder or priest. In the end, an interest sparked by the school visits of my final upper-secondary year ' +
@@ -199,7 +199,7 @@ export const content = {
 
     nav: {
       brand: 'Sanna Pitkänen',
-      about: 'Minun tarinani',
+      about: 'Esittely',
       projects: 'Projektit',
       contact: 'Yhteystiedot',
     },
@@ -225,7 +225,7 @@ export const content = {
     },
 
     about: {
-      heading: 'Minun tarinani',
+      heading: 'Esittely',
       paragraphs: [
         'Mikä minusta tulee isona? Veljeni mukaan "sellosti" – olin juuri saanut ensimmäisen soittimeni. ' +
         'Minä mietin lääkäriä, lastenhoitajaa tai pappia. Lopulta päädyin abivuoden oppilaitosvierailujen herättämän kiinnostuksen ' +
