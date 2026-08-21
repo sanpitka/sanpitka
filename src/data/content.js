@@ -10,7 +10,7 @@ export const content = {
 
     nav: {
       brand: 'Sanna Pitkänen',
-      about: 'My story',
+      about: 'About me',
       projects: 'Projects',
       contact: 'Contact',
     },
