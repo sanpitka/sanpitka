@@ -129,7 +129,7 @@ export const content = {
             'My team liked the prototype I made in Figma, so my idea made it into use. ' +
             'I also designed and implemented an animation imitating brush strokes, which told the user that the program had begun processing the image. ' +
             'Because the SmartCanvas installation was going on display during Oulu’s year as European Capital of Culture in 2026, I spent one spring afternoon cycling around Oulu ' +
-            'and photographing places that would suit the art wall as new, local filters — Pikisaari, seen in the image, among them. ',
+            'and photographing places that would suit the art wall as new, local backgrounds — Pikisaari, seen in the image, among them. ',
           tags: [
             'TypeScript',
             'UX/UI',
@@ -318,7 +318,7 @@ export const content = {
             'Figmalla tekemäni prototyyppi miellytti tiimiäni, joten ajatukseni pääsi käyttöön. ' +
             'Suunnittelin ja toteutin myös siveltimenvetoja imitoiva animaation, joka kertoi käyttäjälle, että ohjelma oli alkanut käsitellä kuvaa. ' +
             'Koska SmartCanvas-taideinstallaatio oli tulossa esille Oulun kulttuuripääkaupunkivuonna 2026, vietin yhden keväisen iltapäivän pyöräillen ympäri Oulua ' +
-            'ja valokuvaten taideseinän uusiksi, paikallisiksi filttereiksi sopivia paikkoja, esimerkkinä kuvassa näkyvä Pikisaari. ',
+            'ja valokuvaten taideseinän uusiksi, paikallisiksi taustakuviksi sopivia paikkoja, esimerkkinä kuvassa näkyvä Pikisaari. ',
           tags: [
             'TypeScript',
             'UX/UI',
